@@ -21,24 +21,33 @@ header .container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    font-size: 18px;
 }
 
 header .logo {
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
     font-size: 40px;
+    height: 200px;
+    width: 300px;
+}
+
+header nav {
+    padding-right: 20px;
 }
 
 header nav a {
     text-decoration: none;
     color: #AAA;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 header nav a:hover {
     color: #ffffff;
 }
-
+main{
+    margin-bottom: 10px;
+}
 /*filme principal*/
 .filme-principal {
     font-size: 16px;
@@ -51,13 +60,51 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
 }
 
 .filme-principal .descricao {
-    margin-bottom: 90px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
-.titulo{
+.filme-principal .titulo{
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
 }
